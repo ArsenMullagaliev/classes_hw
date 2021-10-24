@@ -3,7 +3,7 @@ class CountVectorizer():
     from collections.abc import Iterable
 
     def __init__(self):
-        self._features = dict()
+        self._features = list()
         self._tfidf = list()
 
     def fit_transform(self, raw_documents: Iterable) -> list:
