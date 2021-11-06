@@ -62,5 +62,4 @@ class Advert(ColorizeMixin, BaseAdvert):
 
 
 if __name__ == '__main__':
-
     pass
