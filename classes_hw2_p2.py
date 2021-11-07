@@ -64,4 +64,20 @@ class Advert(ColorizeMixin, BaseAdvert):
 
 
 if __name__ == '__main__':
-    pass
+    json1 = '''{
+    "title": "iPhone X",
+    "price": 100,
+    "location": {
+    "address": "город Самара, улица Мориса Тореза, 50",
+    "metro_stations": ["Спортивная", "Гагаринская"]
+    }
+    }
+    '''
+
+    ad = Advert(json1)
+    print(ad.contents.title)
+    print(ad.contents.price)
+    print(ad.contents.location)
+    print(ad.contents.location.address)
+    print(ad.contents.location.metro_stations)
+    print(ad)
