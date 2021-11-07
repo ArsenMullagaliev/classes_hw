@@ -27,8 +27,10 @@ class AdvertAttributes:
                 raise ValueError('Price must be >= 0')
             else:
                 return self.price_
-        else:
+        elif hasattr(self, 'title'):
             return 0
+        else:
+            return None
 
     def __str__(self) -> str:
         return str(self.__dict__)
